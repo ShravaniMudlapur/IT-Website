@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions - IT Company</title>
+    <i class="fab fa-uncharted"></i> Tech Solutions
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <body>
+        <div id="overlay"></div>
+        <video autoplay muted loop id="bg-video">
+            <source src="4496268-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+            <div class="welcome-container">
+                <h1 class="welcome-text">
+                    <span class="wave"></span> Welcome to <span class="company-name">Tech Solutions</span>
+                </h1>
+                <p class="welcome-subtext">Innovating the Future, One Solution at a Time.</p>
+            </div>
+    </body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 fixed w-full top-0 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-400">Tech Solutions</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-400">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center text-center" 
+        style="background-image: url('c:\Users\hp\Downloads\istockphoto-1556389414-640_adpp_is.mp4');" 
+        data-aos="fade-up">
+        <div class="bg-black bg-opacity-50 p-10 rounded-lg">
+            <h1 class="tagline">Empowering Your Business with Technology</h1>
+            <h2 class="text-2xl md:text-4xl mt-4 font-semibold">Innovative IT Solutions for Growth</h2>
+            <p class="mt-4 text-lg md:text-xl">We specialize in software development, AI solutions, and IT consulting.</p>
+            <a href="#services" class="mt-6 inline-block px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">
+                Explore Services
+            </a>
+        </div>
+    </section>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" class="fixed bottom-6 right-6 bg-blue-500 text-white w-14 h-14 flex items-center justify-center text-2xl rounded-full cursor-pointer shadow-lg hover:bg-blue-700">
+        💬
+    </div>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container" class="fixed bottom-20 right-6 bg-gray-800 p-4 w-80 rounded-lg hidden shadow-lg">
+        <div id="chatbot-header" class="bg-blue-500 p-3 text-white flex justify-between items-center">
+            <span>Chatbot</span>
+            <span id="close-chatbot" class="cursor-pointer text-xl">✖</span>
+        </div>
+        <div id="chatbox" class="h-56 overflow-y-auto p-2 bg-gray-700 text-white">
+            <p><strong>Bot:</strong> Hello! How can I help you?</p>
+        </div>
+        <div class="p-2">
+            <input type="text" id="user-input" class="w-full p-2 bg-gray-700 text-white rounded" placeholder="Type a message...">
+            <button id="send-btn" class="w-full mt-2 bg-blue-500 text-white p-2 rounded hover:bg-blue-700">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+     <!-- About Us Section -->
+     <section id="about" class="py-16 bg-gray-800" data-aos="fade-right">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-400">About Us</h2>
+            <p class="mt-4 text-lg">We are a leading IT solutions provider dedicated to innovation.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-lg">
+                Tech Solutions is a team of expert developers, AI engineers, and IT strategists delivering top-notch digital solutions. 
+                We help businesses scale through cutting-edge software, AI, and cloud computing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-900" data-aos="fade-left">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-400">Our Services</h2>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-blue-400">Software Development</h3>
+                <p class="mt-2">Custom software solutions for businesses, web & mobile apps.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-blue-400">AI & Automation</h3>
+                <p class="mt-2">AI-powered solutions, chatbots, and process automation.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-blue-400">Cloud Computing</h3>
+                <p class="mt-2">Secure and scalable cloud solutions for businesses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    
+    <section id="our-work" class="our-work-container">
+        <h2 class="section-title">🚀 Our Expertise in Action</h2>
+        <p class="section-subtext">We transform ideas into reality with cutting-edge technology and innovation.</p>
+    
+        <div class="work-grid">
+            <div class="work-card">
+                <img src="pexels-markusspiske-2004161.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Crafting responsive, high-performance websites with modern frameworks.</p>
+            </div>
+    
+            <div class="work-card">
+                <img src="pexels-cookiecutter-17323801.jpg" alt="Cloud Solutions">
+                <h3>Cloud Solutions</h3>
+                <p>Scalable and secure cloud-based solutions to power businesses globally.</p>
+            </div>
+    
+            <div class="work-card">
+                <img src="pexels-tara-winstead-8386440.jpg" alt="AI & Automation">
+                <h3>AI & Automation</h3>
+                <p>Integrating artificial intelligence to drive efficiency and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900" data-aos="fade-in">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-400">Get in Touch</h2>
+        </div>
+        <div class="max-w-lg mx-auto px-4">
+            <form class="bg-gray-700 p-6 rounded-lg">
+                <input type="text" placeholder="Your Name" class="w-full p-2 mt-2 rounded bg-gray-800 text-white">
+                <input type="email" placeholder="Your Email" class="w-full p-2 mt-4 rounded bg-gray-800 text-white">
+                <textarea placeholder="Your Message" class="w-full p-2 mt-4 rounded bg-gray-800 text-white"></textarea>
+                <button class="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // Get elements
+        const chatbotIcon = document.getElementById("chatbot-icon");
+        const chatbotContainer = document.getElementById("chatbot-container");
+        const closeChatbot = document.getElementById("close-chatbot");
+        const sendButton = document.getElementById("send-btn");
+        const userInput = document.getElementById("user-input");
+        const chatbox = document.getElementById("chatbox");
+    
+        // Show chatbot window
+        chatbotIcon.addEventListener("click", () => {
+            chatbotContainer.classList.remove("hidden");
+        });
+        
+    
+        // Close chatbot window
+        closeChatbot.addEventListener("click", () => {
+            chatbotContainer.classList.add("hidden");
+        });
+    
+        // Handle user messages
+        sendButton.addEventListener("click", () => {
+            let userMessage = userInput.value.trim();
+            if (userMessage === "") return;
+    
+            // Display user message
+            chatbox.innerHTML += <p class="text-blue-400">You: ${userMessage}</p>;
+            userInput.value = "";
+    
+            // Simple chatbot response
+            let botResponse = getBotResponse(userMessage);
+            setTimeout(() => {
+                chatbox.innerHTML += <p class="text-green-400">Bot: ${botResponse}</p>;
+                chatbox.scrollTop = chatbox.scrollHeight;
+            }, 500);
+        });
+    
+        // Predefined chatbot responses
+        function getBotResponse(message) {
+            message = message.toLowerCase();
+            if (message.includes("hello")) return "Hello! How can I help you?";
+            if (message.includes("services")) return "We provide IT solutions, AI development, and cloud computing.";
+            if (message.includes("contact")) return "You can contact us via the Contact section on the website.";
+            return "I'm here to assist you! Please ask a question.";
+        }
+    </script>
+    <script>
+        // Get elements
+        const chatbotIcon = document.getElementById("chatbot-icon");
+        const chatbotContainer = document.getElementById("chatbot-container");
+        const closeChatbot = document.getElementById("close-chatbot");
+        const sendButton = document.getElementById("send-btn");
+        const userInput = document.getElementById("user-input");
+        const chatbox = document.getElementById("chatbox");
+    
+        // Show chatbot window
+        chatbotIcon.addEventListener("click", () => {
+            chatbotContainer.classList.remove("hidden");
+        });
+    
+        // Close chatbot window
+        closeChatbot.addEventListener("click", () => {
+            chatbotContainer.classList.add("hidden");
+        });
+    
+        // Handle user messages
+        sendButton.addEventListener("click", () => {
+            let userMessage = userInput.value.trim();
+            if (userMessage === "") return;
+    
+            // Display user message
+            chatbox.innerHTML += <p class="text-blue-400">You: ${userMessage}</p>;
+            userInput.value = "";
+    
+            // Simple chatbot response
+            let botResponse = getBotResponse(userMessage);
+            setTimeout(() => {
+                chatbox.innerHTML += <p class="text-green-400">Bot: ${botResponse}</p>;
+                chatbox.scrollTop = chatbox.scrollHeight;
+            }, 500);
+        });
+    
+        // Predefined chatbot responses
+        function getBotResponse(message) {
+            message = message.toLowerCase();
+            if (message.includes("hello")) return "Hello! How can I help you?";
+            if (message.includes("services")) return "We provide IT solutions, AI development, and cloud computing.";
+            if (message.includes("contact")) return "You can contact us via the Contact section on the website.";
+            return "I'm here to assist you! Please ask a question.";
+        }
+    </script>
+    <script>
+        // Get elements
+        const chatbotIcon = document.getElementById("chatbot-icon");
+        const chatbotContainer = document.getElementById("chatbot-container");
+        const closeChatbot = document.getElementById("close-chatbot");
+        const sendButton = document.getElementById("send-btn");
+        const userInput = document.getElementById("user-input");
+        const chatbox = document.getElementById("chatbox");
+    
+        // Show chatbot window
+        chatbotIcon.addEventListener("click", () => {
+            chatbotContainer.classList.remove("hidden");
+        });
+    
+        // Close chatbot window
+        closeChatbot.addEventListener("click", () => {
+            chatbotContainer.classList.add("hidden");
+        });
+    
+        // Handle user messages
+        sendButton.addEventListener("click", () => {
+            let userMessage = userInput.value.trim();
+            if (userMessage === "") return;
+    
+            // Display user message
+            chatbox.innerHTML += <p class="text-blue-400">You: ${userMessage}</p>;
+            userInput.value = "";
+    
+            // Simple chatbot response
+            let botResponse = getBotResponse(userMessage);
+            setTimeout(() => {
+                chatbox.innerHTML += <p class="text-green-400">Bot: ${botResponse}</p>;
+                chatbox.scrollTop = chatbox.scrollHeight;
+            }, 500);
+        });
+    
+        // Predefined chatbot responses
+        function getBotResponse(message) {
+            message = message.toLowerCase();
+            if (message.includes("hello")) return "Hello! How can I help you?";
+            if (message.includes("services")) return "We provide IT solutions, AI development, and cloud computing.";
+            if (message.includes("contact")) return "You can contact us via the Contact section on the website.";
+            return "I'm here to assist you! Please ask a question.";
+        }
+    </script>
+    <script src="chatbot.js"></script>
+    <script>
+        // Get chatbot elements
+        const chatbotIcon = document.getElementById("chatbot-icon");
+        const chatbotContainer = document.getElementById("chatbot-container");
+        const closeChatbot = document.getElementById("close-chatbot");
+        const sendButton = document.getElementById("send-btn");
+        const userInput = document.getElementById("user-input");
+        const chatbox = document.getElementById("chatbox");
+        
+        // Show chatbot window when clicked
+        chatbotIcon.addEventListener("click", () => {
+            chatbotContainer.style.display = "block";
+        });
+        
+        // Close chatbot window
+        closeChatbot.addEventListener("click", () => {
+            chatbotContainer.style.display = "none";
+        });
+        
+        // Handle user input
+        sendButton.addEventListener("click", () => {
+            let userMessage = userInput.value.trim();
+            if (userMessage === "") return;
+        
+            // Append user message
+            chatbox.innerHTML += <p class="text-blue-400">You: ${userMessage}</p>;
+            userInput.value = "";
+        
+            // Simulate chatbot response
+            let botResponse = getBotResponse(userMessage);
+            setTimeout(() => {
+                chatbox.innerHTML += <p class="text-green-400">Bot: ${botResponse}</p>;
+                chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll
+            }, 500);
+        });
+        
+        // Predefined chatbot responses
+        function getBotResponse(message) {
+            message = message.toLowerCase();
+            if (message.includes("hello")) return "Hello! How can I help you?";
+            if (message.includes("services")) return "We provide IT solutions, AI development, and cloud computing.";
+            if (message.includes("contact")) return "You can contact us via the Contact section on the website.";
+            return "I'm here to assist you! Please ask a question.";
+        }
+        </script>
+        
+</body>
+</html>               
+
+</body> 
+</html>

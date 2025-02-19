@@ -1,0 +1,369 @@
+/* Video Background */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(40%); /* Darkens the video */
+}
+
+/* Overlay to darken video */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    z-index: -1;
+}
+
+/* Welcome Message Styling */
+.welcome-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.welcome-text {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.company-name {
+    color: #ff5733;
+    font-style: italic;
+}
+
+.welcome-subtext {
+    font-size: 22px;
+    color: #ddd;
+    font-weight: 500;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Wave Emoji Animation */
+.wave {
+    display: inline-block;
+    animation: waveAnim 1.5s infinite;
+}
+
+@keyframes waveAnim {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    margin-top: 20vh;
+}
+/* About Us Section - Background Image */
+#about {
+    background: url('business-corporate-technology-people-graphic-concept.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 80px 20px;
+}
+
+/* Dark Overlay for Readability */
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust opacity for readability */
+    z-index: 0;
+}
+
+/* Ensure Content is Above Overlay */
+#about > div {
+    position: relative;
+    z-index: 1;
+}
+
+/* About Us Text Styling */
+#about h2 {
+    color: white;
+}
+
+#about p {
+    color: #f0f0f0;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Services Section - Add Background Image */
+#services {
+    background: url('team-business-people-stacking-hands.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    position: relative;
+}
+
+/* Optional: Dark Overlay for Better Readability */
+#services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust opacity for visibility */
+    z-index: 0;
+}
+
+/* Ensure Content is Above the Overlay */
+#services > div {
+    position: relative;
+    z-index: 1;
+}
+
+/* Service Card Styling */
+.service-card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Glass effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Our Work Section */
+.our-work-container {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: black;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.section-subtext {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Work Grid */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Work Card */
+.work-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+    color: white;
+}
+
+.work-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.work-card h3 {
+    font-size: 22px;
+    color: white;
+}
+
+.work-card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Hover Effect */
+.work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Chatbot Styling */
+#chatbot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    background: black;
+    color: white;
+}
+
+#chatbox {
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+#user-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: #1f2937;
+    color: white;
+    border: none;
+}
+
+#send-btn {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#send-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Chatbot Icon */
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3b82f6;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#chatbot-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Chatbot Header */
+#chatbot-header {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#close-chatbot {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* Chatbox Content */
+#chatbox {
+    height: 250px;
+    max-height: 40vh; /* Responsive height */
+    overflow-y: auto;
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    background: black;
+    padding: 80px 20px;
+}
+/* Contact Section - Add Background Image */
+#contact {
+    background: url('pexels-sulliwx-2147738761-29738107.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+}
+
+/* Optional: Dark Overlay for Better Readability */
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 0;
+}
+
+/* Ensure Content is Above the Background */
+#contact > div {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    #chatbot-container {
+        width: 90%;
+        right: 5%;
+        bottom: 70px;
+    }
+    #chatbot-header {
+        font-size: 16px;
+    }
+    #chatbox {
+        height: 200px;
+        max-height: 35vh;
+    }
+}
